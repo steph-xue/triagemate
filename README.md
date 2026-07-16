@@ -138,7 +138,7 @@ Supports symptom descriptions in languages other than English, helping reduce co
 |---|---|
 | Frontend | React Native, TypeScript |
 | Backend | Node.js, Express.js |
-| APIs | Google Gemini 2.0 Flash API (translates and organizes user symptoms into structured reports) |
+| APIs | Google Gemini 2.0 Flash API (translates and organizes user symptoms and health-related concerns into structured reports) |
 | Database | MongoDB |
 | Development and Testing | Expo Go |
 
