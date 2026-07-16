@@ -1,10 +1,10 @@
 <h1 align="center">TriageMate</h1>
 <h2 align="center">(BCS Hacks 2025)</h2>
 
-<h2 align="center">
+<h4 align="center">
   An AI-powered approach to efficient hospital triage.<br>
   Empowering patients, supporting providers.
-</h2>
+</h4>
 
 <p align="center"><img src="assets/screenshots/logo.png" alt="TriageMate logo" width="450"></p>
 
