@@ -2,7 +2,7 @@
 <h2 align="center">(BCS Hacks 2025)</h2>
 
 <h4 align="center">
-  An AI-powered approach to efficient hospital triage. <br>
+  An AI-driven approach to streamline hospital triage. <br>
   Empowering patients, supporting providers.
 </h4>
 
