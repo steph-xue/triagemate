@@ -6,7 +6,7 @@
   Empowering patients, supporting providers.
 </h4>
 
-<p align="center"><img src="assets/screenshots/logo.png" alt="TriageMate logo" width="450"></p>
+<p align="center"><img src="doc/screenshots/logo.png" alt="TriageMate logo" width="450"></p>
 
 <p align="center">
   <a href="https://devpost.com/software/TriageMate">Devpost</a>
@@ -56,9 +56,9 @@ This project is a mobile application that uses AI to streamline symptom reportin
 
 The application guides users through a simple symptom-reporting process, from entering the application to reviewing and submitting their completed triage report. Users begin on the landing screen and proceed to the symptom input screen, where they can describe their symptoms or health-related concerns by typing or using their phone’s native speech-to-text keyboard. After the input is submitted, the application processes the description and generates a structured triage report. Users can then review the extracted information, confirm that it accurately reflects their concerns, and complete the submission. A separate profile screen allows users to view the patient information associated with the report.
 
-<p align="center"><img src="assets/screenshots/layout1.png" alt="User flow diagram part 1" width="800"></p>
+<p align="center"><img src="doc/screenshots/layout1.png" alt="User flow diagram part 1" width="800"></p>
 
-<p align="center"><img src="assets/screenshots/layout2.png" alt="User flow diagram part 2" width="800"></p>
+<p align="center"><img src="doc/screenshots/layout2.png" alt="User flow diagram part 2" width="800"></p>
 
 <br>
 
@@ -68,7 +68,7 @@ The application guides users through a simple symptom-reporting process, from en
 
 Introduces users to the application through a clean, accessible interface and guides them to begin describing their symptoms and health concerns.
 
-<p align="center"><img src="assets/screenshots/landing.jpg" alt="Landing Screen" height="400"></p>
+<p align="center"><img src="doc/screenshots/landing.jpg" alt="Landing Screen" height="400"></p>
 
 <br>
 
@@ -76,7 +76,7 @@ Introduces users to the application through a clean, accessible interface and gu
 
 Displays the patient information associated with the triage submission, including their name, date of birth, age, personal health number, address, and phone number. The screen organizes key demographic details in a clear format so they can be reviewed alongside the patient’s symptom report.
 
-<p align="center"><img src="assets/screenshots/profile.jpg" alt="Profile Screen" height="400"></p>
+<p align="center"><img src="doc/screenshots/profile.jpg" alt="Profile Screen" height="400"></p>
 
 <br>
 
@@ -85,9 +85,9 @@ Displays the patient information associated with the triage submission, includin
 Allows users to describe their symptoms through typed text or their phone’s native speech-to-text keyboard. The open-ended input field gives users the flexibility to explain their symptoms, concerns, and relevant context in their own words rather than selecting from a limited set of predefined options.
 
 <p align="center">
-  <img src="assets/screenshots/input1.jpg" alt="Symptom Input Screen 1" height="400">
+  <img src="doc/screenshots/input1.jpg" alt="Symptom Input Screen 1" height="400">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="assets/screenshots/input2.jpg" alt="Symptom Input Screen 2" height="400">
+  <img src="doc/screenshots/input2.jpg" alt="Symptom Input Screen 2" height="400">
 </p>
 
 <br>
@@ -96,7 +96,7 @@ Allows users to describe their symptoms through typed text or their phone’s na
 
 Provides visual feedback while the submitted symptom description is translated, analyzed, and converted into a structured triage report. The processing screen creates a clear transition between symptom entry and the completed report while the backend handles the request.
 
-<p align="center"><img src="assets/screenshots/processing.jpg" alt="Processing Screen" height="400"></p>
+<p align="center"><img src="doc/screenshots/processing.jpg" alt="Processing Screen" height="400"></p>
 
 <br>
 
@@ -105,9 +105,9 @@ Provides visual feedback while the submitted symptom description is translated, 
 Displays the generated triage report in a clear, structured format containing the patient’s chief complaint, symptom summary, relevant risk factors, and potential red flags. The screen separates clinically relevant information into distinct sections, allowing users to review the report and confirm that their symptoms and concerns have been represented accurately before completing the submission.
 
 <p align="center">
-  <img src="assets/screenshots/results1.jpg" alt="Triage Results Screen 1" height="400">
+  <img src="doc/screenshots/results1.jpg" alt="Triage Results Screen 1" height="400">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="assets/screenshots/results2.jpg" alt="Triage Results Screen 2" height="400">
+  <img src="doc/screenshots/results2.jpg" alt="Triage Results Screen 2" height="400">
 </p>
 
 <br>
@@ -116,7 +116,7 @@ Displays the generated triage report in a clear, structured format containing th
 
 Confirms that the triage report has been successfully submitted for review by healthcare providers. The screen gives users clear feedback that their information has been received and is ready to support the provider’s in-person assessment.
 
-<p align="center"><img src="assets/screenshots/success.jpg" alt="Submission Confirmation Screen" height="400"></p>
+<p align="center"><img src="doc/screenshots/success.jpg" alt="Submission Confirmation Screen" height="400"></p>
 
 <br>
 
@@ -125,9 +125,9 @@ Confirms that the triage report has been successfully submitted for review by he
 Supports symptom descriptions in languages other than English, helping reduce communication barriers during triage. Multilingual input is translated into English before being analyzed and structured, allowing the resulting report to remain clear and consistent for healthcare providers while patients communicate in their preferred language.
 
 <p align="center">
-  <img src="assets/screenshots/chinese-input.png" alt="Chinese Symptom Input" height="400">
+  <img src="doc/screenshots/chinese-input.png" alt="Chinese Symptom Input" height="400">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="assets/screenshots/chinese-result.png" alt="Translated Triage Result" height="400">
+  <img src="doc/screenshots/chinese-result.png" alt="Translated Triage Result" height="400">
 </p>
 
 <br>
