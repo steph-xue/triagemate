@@ -37,7 +37,7 @@
 
 ## Problem Statement
 
-TriageMate was inspired by a shared recognition of the communication gaps and inefficiencies that can affect hospital care. One of our team members recently accompanied a family member to the emergency department at Vancouver General Hospital after she experienced significant bleeding. Because she was unable to communicate in English, important details about her condition were not fully conveyed during intake, contributing to a lengthy wait before she was assessed by a physician.
+TriageMate was inspired by a shared recognition of the communication gaps and inefficiencies that can affect hospital care. One of our team members recently accompanied a family member to the emergency department at Vancouver General Hospital after she experienced significant bleeding. Because she was unable to communicate in English, important details about her condition were not fully conveyed during intake, contributing to a lengthy wait and misunderstandings when she was assessed by a physician.
 
 Our team has also seen how language barriers and unclear symptom communication can create challenges for both patients and healthcare providers. These experiences highlighted the need for a tool that helps patients describe their symptoms in their preferred language while presenting healthcare professionals with clear, structured information for triage.
 
