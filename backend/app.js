@@ -71,7 +71,7 @@ app.post('/', async (req, res) => {
     Do not respond or talk about anything not medical related. Do not include any extra formatting, explanations, or metadata. Only return the JSON object itself.`;
 
     const response = await ai.models.generateContent({
-        model: "gemini-2.0-flash",
+        model: "gemini-3.6-flash",
         contents: triagePrompt,
 
     });
@@ -137,7 +137,7 @@ app.delete('/:id', async (req, res) => {
   }
 });
 
-mongoose.connect(database_uri, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(database_uri);
 const db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
