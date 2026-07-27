@@ -233,7 +233,7 @@ npm install
 
 **5. Start the backend server**
 
-Still inside the backend folder, start the server.
+Start the server inside the backend folder.
 ```bash
 node app.js
 ```
