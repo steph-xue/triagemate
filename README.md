@@ -172,6 +172,8 @@ Several enhancements are planned to extend the functionality of the application:
 
 Follow the steps below to set up and run the application on your own machine. This project requires both a frontend Expo server and a backend server running at the same time, along with the Expo Go app installed on your phone.
 
+<br>
+
 **Prerequisites**
 
 Make sure Node.js is installed before you begin. You can check by running the command below, which should print a version number.
@@ -185,6 +187,8 @@ npm install -g expo-cli
 ```
 
 Download the Expo Go app on your iOS or Android device from your device's app store.
+
+<br>
 
 **1. Clone the repository**
 
