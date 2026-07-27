@@ -9,7 +9,7 @@
 <p align="center"><img src="doc/screenshots/logo.png" alt="TriageMate logo" width="450"></p>
 
 <p align="center">
-  <a href="https://devpost.com/software/TriageMate">Devpost</a>
+  <a href="https://devpost.com/software/TriageMate">Devpost</a> &nbsp;|&nbsp; <a href="https://expo.dev/preview/update?message=Fix+runtime+version+for+Expo+Go&updateRuntimeVersion=exposdk%3A54.0.0&createdAt=2026-07-27T08%3A13%3A22.863Z&slug=MyApp&projectId=cf16b210-63e0-41f2-aa9f-bb608c547c7e&group=f7ad462d-40d1-43ca-b36b-a7763517ac99">Live Demo (Expo Go)</a>
 </p>
 
 <br>
