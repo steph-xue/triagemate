@@ -22,7 +22,7 @@ export default function InputScreen() {
     router.push("/loading");
 
     try {
-      await fetch("http://192.168.1.xxx:3000/", {
+      await fetch("https://triagemate.onrender.com/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

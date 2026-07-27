@@ -48,7 +48,7 @@ Communicating health concerns can be difficult, especially when symptoms are com
 
 ## Overview
 
-This project is a full-stack mobile application that uses AI to streamline symptom reporting and hospital triage. Users can speak or type their symptoms in any language using their phone’s native speech-to-text keyboard, after which the application translates the input into English when necessary, identifies relevant risk factors and potential red flags, and organizes the information into a concise triage report for healthcare providers to review. The frontend is built with React Native and TypeScript using the Expo framework, with Expo Go used for mobile development and testing. The backend is built with Node.js and Express.js, while MongoDB is used for data storage. The Google Gemini API processes each free-text symptom description and generates a structured report containing the chief complaint, symptom details, risk factors, and potential red flags.
+This project is a full-stack mobile application that uses AI to streamline symptom reporting and hospital triage. Users can speak or type their symptoms in any language using their phone’s native speech-to-text keyboard, after which the application translates the input into English when necessary, identifies relevant risk factors and potential red flags, and organizes the information into a concise triage report for healthcare providers to review. The frontend is built with React Native and TypeScript using the Expo framework, with the Expo Go application used for mobile development and testing. The backend is built with Node.js and Express.js, while MongoDB is used for data storage. The Google Gemini API processes each free-text symptom description and generates a structured report containing the chief complaint, symptom details, risk factors, and potential red flags. The application's backend is deployed on Render for cloud hosting, allowing the mobile application to be accessed directly through the Expo Go application without requiring any local setup.
 
 <br>
 
@@ -141,19 +141,20 @@ Supports symptom descriptions in languages other than English, helping reduce co
 | APIs | Google Gemini API (translates and organizes user symptoms and health-related concerns into structured reports) |
 | Database | MongoDB |
 | Development and Testing | Expo Go |
+| Deployment | Render |
 
 <br>
 
 ## How It Works
 
-The frontend is a React Native app built with Expo and TypeScript, made up of separate screens for the landing page, patient profile, symptom input, processing, results, and submission confirmation, with a navigation bar allowing users to move between the symptom triage flow and their profile. On the symptom input screen, users can speak using their phone's native speech to text keyboard or type directly into a text field. When a user submits a symptom description, the app sends it to the backend, which builds a detailed prompt instructing the Google Gemini API to translate the text into English if needed, triage it for risk factors and red flags, and structure the result into a report covering the chief complaint, symptom details, risk factors, and red flags, returned as JSON. The backend parses that JSON, saves the original text and structured report to MongoDB through a Mongoose schema, and sends the result back to the app, which displays it on the results screen for the user to review. Confirming the report on the results screen navigates to a submission confirmation screen, while the underlying report has already been saved to the database as part of the initial request.
+The frontend is a React Native application built with Expo and TypeScript, made up of separate screens for the landing page, patient profile, symptom input, processing, results, and submission confirmation, with a navigation bar allowing users to move between the symptom triage flow and their profile. On the symptom input screen, users can speak using their phone's native speech to text keyboard or type directly into a text field. When a user submits a symptom description, the application sends it to the backend, which builds a detailed prompt instructing the Google Gemini API to translate the text into English if needed, triage it for risk factors and red flags, and structure the result into a report covering the chief complaint, symptom details, risk factors, and red flags, returned as JSON. The backend parses that JSON, saves the original text and structured report to MongoDB through a Mongoose schema, and sends the result back to the app, which displays it on the results screen for the user to review. Confirming the report on the results screen navigates to a submission confirmation screen, while the underlying report has already been saved to the database as part of the initial request.
 
 <br>
 
 ## Technical Challenges and Achievements
 
-- Most of the team had never worked with React Native or built a mobile app before, so setting up the development environment with Expo and running the app smoothly through Expo Go was a significant first hurdle
-- Connecting the frontend to the backend on a mobile device required careful debugging, since the app needed to reach a backend server over the local network rather than simply calling localhost
+- Most of the team had never worked with React Native or built a mobile application before, so setting up the development environment with Expo and running the application smoothly through Expo Go was a significant first hurdle
+- Connecting the frontend to the backend on a mobile device required careful debugging, since the application needed to reach a backend server over the local network rather than simply calling localhost
 - Navigating merge conflicts and platform-specific issues as a team while working under a tight hackathon timeline
 - Successfully built a multilingual AI-powered triage system that translates and parses user symptoms from any language, aimed at improving accessibility for diverse patient populations
 - Learned how to prompt engineer a healthcare-related task, specifically extracting only clinically relevant details from free text input and structuring it into a consistent, well-formed triage report
@@ -170,7 +171,24 @@ Several enhancements are planned to extend the functionality of the application:
 
 ## Getting Started
 
-Follow the steps below to set up and run the application on your own machine. This project requires both a frontend Expo server and a backend server running at the same time, along with the Expo Go app installed on your phone.
+There are two ways to run TriageMate: Open it directly in the Expo Go application (the backend is deployed on Render), or build and run the project locally on your own machine.
+
+<br>
+
+### Option 1: Open It Directly In the Expo Go Application (Easiest)
+
+Setup only requires downloading the Expo Go application and creating a free Expo account. The backend is already deployed on Render, so there's nothing else to configure.
+
+1. Download the Expo Go application on your iOS or Android device from your device's app store, then create a free Expo account or sign in if you already have one.
+2. Open this link on your phone to launch the application: https://expo.dev/preview/update?message=Fix+runtime+version+for+Expo+Go&updateRuntimeVersion=exposdk%3A54.0.0&createdAt=2026-07-27T08%3A13%3A22.863Z&slug=MyApp&projectId=cf16b210-63e0-41f2-aa9f-bb608c547c7e&group=f7ad462d-40d1-43ca-b36b-a7763517ac99
+
+> **Note:** The backend spins down when idle, so the first symptom submission may take up to a minute while the server wakes up. Subsequent requests will be much faster.
+
+<br>
+
+### Option 2: Build and Run It Locally
+
+Follow the steps below to set up and run the application on your own machine. This project requires both a frontend Expo server and a backend server running at the same time, along with the Expo Go application installed on your phone.
 
 <br>
 
@@ -181,7 +199,7 @@ Make sure Node.js v20.19.4 or later is installed before you begin. You can check
 node --version
 ```
 
-Download the Expo Go app on your iOS or Android device from your device's app store.
+Download the Expo Go application on your iOS or Android device from your device's app store.
 
 <br>
 
@@ -203,7 +221,7 @@ GEMINIAI="your-gemini-api-key"             # Gemini API key from Google AI Studi
 
 **3. Configure network access**
 
-Make sure your computer and phone are connected to the same Wi-Fi network. In `app/input.tsx`, replace the backend URL on line 25 with your computer's local IP address (for example, `http://192.168.1.xxx:3000`), so your phone can reach the backend server.
+Make sure your computer and phone are connected to the same Wi-Fi network. In `app/input.tsx`, replace the backend URL (which points at the deployed Render backend by default) with your computer's local IP address (for example, `http://192.168.1.xxx:3000`), so your phone can reach your local backend server instead.
 
 **4. Install backend dependencies**
 
@@ -229,9 +247,9 @@ npm install
 
 **7. Start the frontend Expo server**
 
-This runs the Expo development server for the mobile app.
+This runs the Expo development server for the mobile application.
 ```bash
 npx expo start
 ```
 
-Once both servers are running, the Expo terminal will display a QR code. Scan it with your phone's camera to open the application in the Expo Go app.
+Once both servers are running, the Expo terminal will display a QR code. Scan it with your phone's camera to open the application in the Expo Go application.

@@ -45,7 +45,7 @@
     },
     "owner": "stephxue",
     "runtimeVersion": {
-      "policy": "appVersion"
+      "policy": "sdkVersion"
     },
     "updates": {
       "url": "https://u.expo.dev/cf16b210-63e0-41f2-aa9f-bb608c547c7e"
