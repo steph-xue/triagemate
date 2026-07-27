@@ -3,6 +3,12 @@ import * as React from 'react';
 import { Stack } from "expo-router";
 
 export default function RootLayout() {
+  React.useEffect(() => {
+    // wakes up the Render backend as soon as the app opens, so it's
+    // already warm by the time the user submits a symptom report
+    fetch("https://triagemate.onrender.com/health").catch(() => {});
+  }, []);
+
   return (
     <Stack>
       <Stack.Screen

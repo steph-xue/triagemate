@@ -40,6 +40,11 @@ const triageSchema = new mongoose.Schema({
 
 const TriageResponse = mongoose.model("TriageResponse", triageSchema);
 
+// lightweight endpoint for waking up the server without hitting the database
+app.get('/health', (req, res) => {
+  res.status(200).send('ok');
+});
+
 app.post('/', async (req, res) => {
   try {
     const text = req.body.data;
