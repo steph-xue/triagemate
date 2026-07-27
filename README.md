@@ -211,17 +211,17 @@ git clone https://github.com/steph-xue/TriageMate.git
 cd TriageMate
 ```
 
-**2. Set up environment variables**
+**2. Configure network access**
+
+Make sure your computer and phone are connected to the same Wi-Fi network. In `app/input.tsx`, replace the backend URL (which points at the deployed Render backend by default) with your computer's local IP address (for example, `http://192.168.1.xxx:3000`), so your phone can reach your local backend server instead.
+
+**3. Set up environment variables**
 
 Create a `.env` file inside the `backend` folder with the following values.
 ```bash
 ATLAS_URI="mongodb+srv://your-mongo-uri"   # MongoDB Atlas connection string
 GEMINIAI="your-gemini-api-key"             # Gemini API key from Google AI Studio
 ```
-
-**3. Configure network access**
-
-Make sure your computer and phone are connected to the same Wi-Fi network. In `app/input.tsx`, replace the backend URL (which points at the deployed Render backend by default) with your computer's local IP address (for example, `http://192.168.1.xxx:3000`), so your phone can reach your local backend server instead.
 
 **4. Install backend dependencies**
 
