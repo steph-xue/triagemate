@@ -153,7 +153,7 @@ The frontend is a React Native application made up of separate screens for the l
 
 ## Technical Challenges and Achievements
 
-- Most of the team had never worked with React Native or built a mobile application before, so setting up the development environment with Expo and running the application smoothly through Expo Go was a significant first hurdle
+- Most of the team had never worked with React Native or built a mobile application before, so setting up the development environment with Expo and running the application through Expo Go was a significant first hurdle
 - Connecting the frontend to the backend on a mobile device required careful debugging, since the application needed to reach a backend server over the local network rather than simply calling localhost
 - Navigating merge conflicts and platform-specific issues as a team while working under a tight hackathon timeline
 - Successfully built a multilingual AI-powered triage system that translates and parses user symptoms from any language, aimed at improving accessibility for diverse patient populations
