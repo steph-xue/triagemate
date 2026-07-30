@@ -13,10 +13,12 @@ import {
 import { router } from "expo-router";
 import NavBar from "./components/navbar";
 
+// Screen where users enter their symptoms and submit them for triage
 export default function InputScreen() {
   const [text, setText] = useState("");
   const [triageResponse, setTriageResponse] = useState();
 
+  // Sends the entered symptom text to the backend and navigates to the result screen with the triage response
   const handleSubmit = async () => {
     Keyboard.dismiss();
     router.push("/loading");

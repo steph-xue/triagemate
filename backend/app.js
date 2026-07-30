@@ -14,11 +14,6 @@ app.use(express.json());
 app.use(cors());
 const port = process.env.PORT || 3000;
 
-// var corsOption = {
-//   origin: ["http://localhost:8081", "http://localhost:3000"],
-//   optionsSuccessStatus: 200,
-// };
-
 const triageResponse = {
   chiefComplaint: String,
   symptomDetails: String,
@@ -26,7 +21,7 @@ const triageResponse = {
   redFlags: String,
 }
 
-// triage schema
+// Triage schema
 const triageSchema = new mongoose.Schema({
   freeText: {
     type: String,
@@ -40,11 +35,12 @@ const triageSchema = new mongoose.Schema({
 
 const TriageResponse = mongoose.model("TriageResponse", triageSchema);
 
-// lightweight endpoint for waking up the server without hitting the database
+// Lightweight endpoint for waking up the server without hitting the database
 app.get('/health', (req, res) => {
   res.status(200).send('ok');
 });
 
+// Generates a structured triage report from free-text symptoms via Gemini and saves it to MongoDB
 app.post('/', async (req, res) => {
   try {
     const text = req.body.data;
@@ -81,7 +77,7 @@ app.post('/', async (req, res) => {
 
     });
 
-    // remove the random formatting around the response returned
+    // Remove the random formatting around the response returned
     const cleanJsonString = response.text.replace(/```json\n/, "").replace(/\n```/, "").trim();
 
     const parsedData = JSON.parse(cleanJsonString);
@@ -103,7 +99,7 @@ app.post('/', async (req, res) => {
   }
 });
 
-// get triage response history
+// Get triage response history
 app.get('/', async (req, res) => {
   try {
     const result = await TriageResponse.find({});
@@ -114,6 +110,7 @@ app.get('/', async (req, res) => {
   }
 });
 
+// Fetches a single triage response by id
 app.get('/:id', async (req, res) => {
   try {
     const result = await TriageResponse.findById(req.params.id);
@@ -127,7 +124,7 @@ app.get('/:id', async (req, res) => {
   }
 });
 
-// delete a triage response
+// Delete a triage response
 app.delete('/:id', async (req, res) => {
   try {
     const result = await TriageResponse.findByIdAndDelete(req.params.id);

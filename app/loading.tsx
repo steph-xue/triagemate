@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { View, Text, StyleSheet, ActivityIndicator } from "react-native";
 import { useLocalSearchParams, router } from "expo-router";
 
+// Displays a processing indicator while the triage report is generated
 export default function LoadingScreen() {
     const triage = useLocalSearchParams();
 
@@ -28,7 +29,7 @@ export default function LoadingScreen() {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: "#0b2c52", // match input.tsx background
+      backgroundColor: "#0b2c52", // Match input.tsx background
       justifyContent: "center",
       alignItems: "center",
       paddingHorizontal: 20,

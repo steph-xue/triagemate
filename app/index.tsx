@@ -5,17 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import LandingScreen from './landing';
 import { router } from 'expo-router';
 
-// const Stack = createNativeStackNavigator();
-
-// export default function Index() {
-//   return (
-//     <Stack.Navigator>
-//         <Stack.Screen name="LandingPage" component={LandingPage}></Stack.Screen>
-//         <Stack.Screen name="TextInputBox" component={TextInputBox}></Stack.Screen>
-//     </Stack.Navigator>
-//   );
-// }
-
+// Entry route that renders the landing screen
 export default function Home() {
   return <LandingScreen />;
 }

@@ -3,6 +3,7 @@ import { View, Text, Image, StyleSheet, Button, TouchableOpacity } from 'react-n
 import { router } from 'expo-router';
 
 
+// Confirms that the triage report was submitted successfully
 export default function SubmissionSuccessScreen() {
   return (
     <View style={styles.container}>

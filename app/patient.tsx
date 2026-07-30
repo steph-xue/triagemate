@@ -5,6 +5,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import NavBar from "./components/navbar";
 
 
+// Displays the patient's profile information alongside the navigation bar
 export default function ProfileScreen() {
   return (
     <View style={styles.container}>
@@ -72,11 +73,11 @@ const styles = StyleSheet.create({
     paddingLeft: 15,
     borderRadius: 25,
 
-    /// Soft iOS shadow
+    // Soft iOS shadow
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 10 },
-    shadowOpacity: 0.55,         // lower opacity for softness
-    shadowRadius: 50,             // more blur for smooth edges
+    shadowOpacity: 0.55,         // Lower opacity for softness
+    shadowRadius: 50,             // More blur for smooth edges
 
     // Soft Android shadow
     elevation: 10, 

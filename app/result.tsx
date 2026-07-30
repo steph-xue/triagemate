@@ -2,6 +2,7 @@ import { useLocalSearchParams, router } from "expo-router";
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
+// Displays the structured triage report and lets the user confirm submission
 export default function ResultScreen() {
   const { chiefComplaint, symptomDetails, riskFactors, redFlags } = useLocalSearchParams();
 

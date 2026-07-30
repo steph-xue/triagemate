@@ -3,6 +3,7 @@ import { View, Text, Image, StyleSheet, Button, TouchableOpacity } from 'react-n
 import { router } from 'expo-router';
 
 
+// Landing screen introducing the app and prompting users to begin
 export default function LandingScreen() {
   return (
     <View style={styles.container}>
