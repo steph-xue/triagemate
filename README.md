@@ -9,7 +9,7 @@
 <p align="center"><img src="docs/images/logo.png" alt="TriageMate logo" width="450"></p>
 
 <p align="center">
-  <a href="https://devpost.com/software/TriageMate">Devpost</a> &nbsp;|&nbsp; <a href="https://qr.expo.dev/eas-update?projectId=cf16b210-63e0-41f2-aa9f-bb608c547c7e&branchId=019fa257-9f5d-7e3f-bdf2-5a579bed687f&format=url">Live Demo (Expo Go)</a>
+  <a href="https://devpost.com/software/TriageMate">Devpost</a> &nbsp;|&nbsp; <a href="docs/qr-code/qr-code.svg">Live Demo (Expo Go)</a>
 </p>
 
 <br>
@@ -182,7 +182,11 @@ There are two main ways to run TriageMate:
 Setup only requires downloading the Expo Go application and creating a free Expo account. The backend is already deployed on Render, so there's nothing else to configure.
 
 1. Download the Expo Go application on your iOS or Android device from your device's app store, then create a free Expo account or sign in if you already have one.
-2. Open this link on your phone to launch the application: https://qr.expo.dev/eas-update?projectId=cf16b210-63e0-41f2-aa9f-bb608c547c7e&branchId=019fa257-9f5d-7e3f-bdf2-5a579bed687f&format=url
+2. Scan the QR code below with your phone's camera to launch the application.
+
+<p align="center">
+  <img src="docs/qr-code/qr-code.svg" alt="Scan to open TriageMate in Expo Go" width="150">
+</p>
 
 <br>
 
