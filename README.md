@@ -9,7 +9,7 @@
 <p align="center"><img src="docs/images/logo.png" alt="TriageMate logo" width="450"></p>
 
 <p align="center">
-  <a href="https://devpost.com/software/TriageMate">Devpost</a> &nbsp;|&nbsp; <a href="docs/qr-code/qr-code.svg">Live Demo (Expo Go)</a>
+  <a href="https://devpost.com/software/TriageMate">Devpost</a> &nbsp;|&nbsp; <a href="#option-1-open-it-directly-in-the-expo-go-application-easiest">Live Demo (Expo Go)</a>
 </p>
 
 <br>
