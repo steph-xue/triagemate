@@ -243,7 +243,7 @@ node app.js
 
 **5. Set Up the Frontend**
 
-In a separate terminal from the project root, install the frontend dependencies and start the Expo development server.
+In a separate terminal from the project root, install all of the frontend dependencies and start the  Expo development server.
 ```bash
 npm install
 npx expo start
