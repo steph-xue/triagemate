@@ -185,7 +185,7 @@ Setup only requires downloading the Expo Go application and creating a free Expo
 2. Scan the QR code below with your phone's camera to launch the application.
 
 <p align="center">
-  <img src="docs/qr-code/qr-code.svg" alt="Scan to open TriageMate in Expo Go" width="150">
+  <img src="docs/qr-code/qr-code.svg" alt="Scan to open TriageMate in Expo Go" width="250">
 </p>
 
 <br>
