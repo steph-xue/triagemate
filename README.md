@@ -216,9 +216,13 @@ git clone https://github.com/steph-xue/TriageMate.git
 cd TriageMate
 ```
 
+<br>
+
 **2. Configure Network Access**
 
 Make sure your computer and phone are connected to the same Wi-Fi network. In `app/input.tsx`, replace the backend URL (which points at the deployed Render backend by default) with your computer's local IP address (for example, `http://192.168.1.xxx:3000`), so your phone can reach your local backend server instead.
+
+<br>
 
 **3. Set Up Environment Variables**
 
