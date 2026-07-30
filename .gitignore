@@ -1,31 +1,21 @@
-# Logs
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-
 # Dependencies
 node_modules/
 
-# Build output
+# Environment variables
+.env
+
+# Build and generated files
 .expo/
 dist/
 web-build/
 expo-env.d.ts
 *.tsbuildinfo
 .metro-health-check*
-app-example/
 
-# Local env files
-.env
+# Logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
 
-# Editor/OS files
+# Operating system files
 .DS_Store
-
-# Native
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.pem
-*.mobileprovision
