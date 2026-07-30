@@ -182,7 +182,7 @@ There are two main ways to run TriageMate:
 Setup only requires downloading the Expo Go application and creating a free Expo account. The backend is already deployed on Render, so there's nothing else to configure.
 
 1. Download the Expo Go application on your iOS or Android device from your device's app store, then create a free Expo account or sign in if you already have one.
-2. Open this link on your phone to launch the application: https://expo.dev/preview/update?message=Fix+runtime+version+for+Expo+Go&updateRuntimeVersion=exposdk%3A54.0.0&createdAt=2026-07-27T08%3A13%3A22.863Z&slug=MyApp&projectId=cf16b210-63e0-41f2-aa9f-bb608c547c7e&group=f7ad462d-40d1-43ca-b36b-a7763517ac99
+2. Open this link on your phone to launch the application: https://qr.expo.dev/eas-update?projectId=cf16b210-63e0-41f2-aa9f-bb608c547c7e&branchId=019fa257-9f5d-7e3f-bdf2-5a579bed687f&format=url
 
 <br>
 
