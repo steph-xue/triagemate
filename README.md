@@ -243,10 +243,9 @@ node app.js
 
 **5. Set Up the Frontend**
 
-In a separate terminal from the project root, install all of the frontend dependencies and start the  Expo development server.
+In a separate terminal window from the project root, install all of the frontend dependencies and start the Expo development server.
 ```bash
 npm install
 npx expo start
 ```
-
-Once both servers are running, the Expo terminal will display a QR code. Scan it with your phone's camera to open the application in the Expo Go application.
+Once both servers are running, the Expo development server will display a QR code in the terminal. Scan the QR code with your phone’s camera to open the application in Expo Go.
