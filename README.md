@@ -226,7 +226,7 @@ Make sure your computer and phone are connected to the same Wi-Fi network. In `a
 
 **3. Set Up Environment Variables**
 
-Create a `.env` file inside the `backend` folder with your MongoDB Atlas connection string and Google Gemini API key.
+Create a `.env` file inside the `backend` folder with your MongoDB connection string and Google Gemini API key.
 ```bash
 ATLAS_URI="mongodb+srv://your-mongo-uri"   # MongoDB Atlas connection string
 GEMINIAI="your-gemini-api-key"             # Gemini API key from Google AI Studio
@@ -234,7 +234,7 @@ GEMINIAI="your-gemini-api-key"             # Gemini API key from Google AI Studi
 
 **4. Set Up the Backend**
 
-From the project root, move into the backend folder, install its dependencies, and start the backend development server.
+From the project root, move into the backend folder, install all of the dependencies, and start the backend development server.
 ```bash
 cd backend
 npm install
@@ -243,7 +243,7 @@ node app.js
 
 **5. Set Up the Frontend**
 
-In a separate terminal, from the project root, install the frontend dependencies and start the Expo development server.
+In a separate terminal from the project root, install all of the frontend dependencies and start the Expo development server.
 ```bash
 npm install
 npx expo start
